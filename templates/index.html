@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+    <h2>LittleField Scraper</h2>
+
+   {% if form %}
+        <div class="form">
+            {{ wtf.quick_form(form) }}
+
+        </div>
+    {% endif %}
+{% endblock %}
